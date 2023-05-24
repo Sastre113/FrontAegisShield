@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {DialogAnimationsExample} from './modal/dialog-animations-example';
 
 @Component({
   selector: 'app-root',
