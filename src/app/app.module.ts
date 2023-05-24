@@ -3,13 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DialogAnimationsExample } from "./modal/dialog-animations-example";
+import { DialogAnimationsExample, DialogAnimationsExampleDialog } from "./modal/dialog-animations-example";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { ModalCustomDialog } from "./modal-custom/dialog/modal-custom-dialog";
+import { ModalCustom } from "./modal-custom/modal/modal-custom";
 
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -17,7 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         BrowserModule,
         AppRoutingModule,
         DialogAnimationsExample,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        ModalCustomDialog,
+        DialogAnimationsExampleDialog,
+        ModalCustom
     ]
 })
 export class AppModule { }

@@ -17,7 +17,7 @@ export class DialogAnimationsExample {
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(DialogAnimationsExampleDialog, {
-      width: '250px',
+      width: '50%',
       enterAnimationDuration,
       exitAnimationDuration,
     });
@@ -33,8 +33,3 @@ export class DialogAnimationsExample {
 export class DialogAnimationsExampleDialog {
   constructor(public dialogRef: MatDialogRef<DialogAnimationsExampleDialog>) {}
 }
-
-
-/**  Copyright 2023 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at https://angular.io/license */
