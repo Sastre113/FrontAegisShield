@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AegisShield';
+  variablePadre: string;
+  datoRecibidoDelHijo: any;
+
+  constructor(){
+    this.variablePadre = 'valor de la variable padre';
+  }
+
+  recibir(dato: string) {
+    this.datoRecibidoDelHijo = dato;
+  }
 }

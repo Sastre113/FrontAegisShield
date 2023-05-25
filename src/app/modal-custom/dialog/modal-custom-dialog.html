@@ -2,11 +2,12 @@
   <!-- Titulo del modal -->
   <header class="modal-header"> 
     <h1 mat-dialog-title>Add file</h1>
+    
   </header>
 
   <!-- Cuerpo del modal -->
   <body class="modal-body" >
-    
+    <h2>{{variableHijadeHija}}</h2>
     <div class="row g-3 align-items-center">
       <div class="col-auto">
         <label for="inputPassword6" class="col-form-label">Password</label>
@@ -62,7 +63,7 @@
   <!-- Footer del modal -->
   <footer class="modal-footer">
     <div mat-dialog-actions class="botones-container">
-      <button mat-stroked-button color="accent">Okey</button>
+      <button (click)="onAceptar()" mat-stroked-button color="accent">Okey</button>
       <button mat-dialog-close mat-stroked-button color="accent">Exit</button>
     </div>
   </footer>
