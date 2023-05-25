@@ -20,6 +20,7 @@ export class ModalCustom {
     this.dialog.open(ModalCustomDialog, {
       width: '50%',
       height: '50%',
+      hasBackdrop: true, // background shadow
       enterAnimationDuration,
       exitAnimationDuration,
     });

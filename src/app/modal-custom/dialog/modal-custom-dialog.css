@@ -2,3 +2,46 @@ button {
     margin-right: 8px;
   }
   
+  .modal-container {
+    /* Estilos para el modal */
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .botones-container {
+
+  }
+  
+  .btn-ok,
+  .btn-exit {
+    /* Estilos para los botones */
+    margin: 0 10px;
+  }
+
+  .modal-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "body"
+      "footer";
+    grid-template-rows: auto 1fr auto; /* Ajusta las alturas según tus necesidades */
+    height: 300px; /* Ajusta la altura total del modal según tus necesidades */
+    /* Otros estilos para el contenedor del modal */
+  }
+  
+  .modal-header {
+    grid-area: header;
+    /* Estilos para el header del modal */
+  }
+  
+  .modal-body {
+    grid-area: body;
+    /* Estilos para el body del modal */
+  }
+  
+  .modal-footer {
+    display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  }
