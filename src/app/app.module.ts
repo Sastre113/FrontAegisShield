@@ -7,7 +7,7 @@ import { DialogAnimationsExample, DialogAnimationsExampleDialog } from "./modal/
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { ModalCustomDialog } from "./modal-custom/dialog/modal-custom-dialog";
-import { ModalCustom } from "./modal-custom/modal/modal-custom";
+import { ButtonModalCustom } from "./modal-custom/button/button-modal-custom";
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { ModalCustom } from "./modal-custom/modal/modal-custom";
         BrowserAnimationsModule,
         ModalCustomDialog,
         DialogAnimationsExampleDialog,
-        ModalCustom
+        ButtonModalCustom
     ]
 })
 export class AppModule { }

@@ -9,12 +9,12 @@ import { NoopScrollStrategy } from '@angular/cdk/overlay';
  */
 @Component({
   selector: 'modal-custom',
-  styleUrls: ['modal-custom.css'],
-  templateUrl: 'modal-custom.html',
+  styleUrls: ['button-modal-custom.css'],
+  templateUrl: 'button-modal-custom.html',
   standalone: true,
   imports: [MatButtonModule, MatDialogModule],
 })
-export class ModalCustom {
+export class ButtonModalCustom {
   constructor(public dialog: MatDialog) {}
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
