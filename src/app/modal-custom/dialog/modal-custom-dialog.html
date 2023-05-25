@@ -1,9 +1,29 @@
 <div class="modal-container">
-  <header class="modal-header">
+  <!-- Titulo del modal -->
+  <header class="modal-header"> 
     <h1 mat-dialog-title>Add file</h1>
   </header>
-  <body class="modal-body">
-    <div mat-grid-tile>
+
+  <!-- Cuerpo del modal -->
+  <body class="modal-body" >
+    
+    <div class="row g-3 align-items-center">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label">Password</label>
+      </div>
+      <div class="col-auto">
+        <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
+      </div>
+      <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+          Must be 8-20 characters long.
+        </span>
+      </div>
+    </div>
+
+    <br>
+
+    <div mat-form-field>
       <label for="exampleFormControlInput1" class="form-label"
         >Email address</label
       >
@@ -17,19 +37,33 @@
 
     <div mat-grid-tile>
       <label for="exampleFormControlTextarea1" class="form-label"
-        >Example textarea</label
-      >
+        >Example textarea</label>
       <textarea
         class="form-control"
         id="exampleFormControlTextarea1"
         rows="3"
       ></textarea>
     </div>
+
+    <div mat-grid-tile>
+      <label for="exampleFormControlInput1" class="form-label"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+
   </body>
+
+  <!-- Footer del modal -->
   <footer class="modal-footer">
     <div mat-dialog-actions class="botones-container">
-      <button mat-dialog-close mat-stroked-button color="accent">EXIT</button>
-      <button mat-stroked-button color="accent">OKEY</button>
+      <button mat-stroked-button color="accent">Okey</button>
+      <button mat-dialog-close mat-stroked-button color="accent">Exit</button>
     </div>
   </footer>
 </div>

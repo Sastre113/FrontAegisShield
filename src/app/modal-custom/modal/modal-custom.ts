@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { ModalCustomDialog } from '../dialog/modal-custom-dialog';
+import { NoopScrollStrategy } from '@angular/cdk/overlay';
 
 /**
  * @title Dialog Animations
@@ -19,7 +20,9 @@ export class ModalCustom {
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(ModalCustomDialog, {
       width: '50%',
-      height: '50%',
+      autoFocus: true,
+      maxWidth: '90vh',
+      maxHeight: '90vh',
       hasBackdrop: true, // background shadow
       enterAnimationDuration,
       exitAnimationDuration,
